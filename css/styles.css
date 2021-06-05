@@ -6,32 +6,13 @@ html {
     --font-colors: 20, 40, 60;
 }
 
-.test1 {
-    width: 200px;
-    height: 200px;
-    color: black;
-    background-color: currentColor;
-}
-
-.test2 {
-    width: 200px;
-    height: 200px;
-    color: red;
-    background-color: currentColor;
-    mix-blend-mode: difference;
-}
-
-.bg-color {
-    background-color: var(--color-secondary);
-}
-
-.text-color {
+/* .text-color {
     color: var(--font-color);
 }
 
 .text-color-light {
     color: rgba(var(--font-colors), 0.66);
-}
+} */
 
 body {
     background-color: #e6f2ff;
