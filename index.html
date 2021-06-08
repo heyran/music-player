@@ -87,12 +87,18 @@
                         <div class="music-row__img">
                             <img src="" alt="" class="cover">
                             <span class="play-btn">
-                                <svg class="play" xmlns="http://www.w3.org/2000/svg" width="22.452" height="25.423" viewBox="0 0 22.452 25.423">
+                                <svg class="play" width="30%">
+                                    <use xlink:href="./assets/images/feather.svg#play"></use>
+                                </svg>
+                                <svg class="pause">
+                                    <use xlink:href="./assets/images/feather.svg#pause"></use>
+                                </svg>
+                                <!-- <svg class="play" xmlns="http://www.w3.org/2000/svg" width="22.452" height="25.423" viewBox="0 0 22.452 25.423">
                                     <path id="Path_17554" data-name="Path 17554" d="M14.531,9.393l16.194,9.578a3.128,3.128,0,0,1,0,5.385L14.531,33.934A3.129,3.129,0,0,1,9.809,31.24V12.088a3.129,3.129,0,0,1,4.722-2.695Z" transform="translate(-9.809 -8.952)" fill="#ff6600"/>
                                 </svg>
                                 <svg class="pause" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="entypo-controller-paus" width="20" height="20">
                                     <g><path d="M15 3h-2c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6zM7 3H5c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6z" fill="#ff6600"></path></g>
-                                </svg>
+                                </svg> -->
                             </span>
                         </div>
                         <div class="music-row__title"></div>
@@ -232,14 +238,14 @@
                         <div class="music-list__left">
                             <img src="" alt="" class="music-list__cover">
                             <div class="music-list__info">
-                                <div>I Miss You</div>
-                                <div>test</div>
+                                <div class="music-list__title">I Miss You</div>
+                                <div class="music-list__artist">test</div>
                             </div>
                         </div>
                         <div class="music-list__right">
                             <div>3:45</div>
                             <div class="music-list__play-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22.452" height="25.423" viewBox="0 0 22.452 25.423">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 22.452 25.423">
                                     <path id="Path_17554" data-name="Path 17554" d="M14.531,9.393l16.194,9.578a3.128,3.128,0,0,1,0,5.385L14.531,33.934A3.129,3.129,0,0,1,9.809,31.24V12.088a3.129,3.129,0,0,1,4.722-2.695Z" transform="translate(-9.809 -8.952)" fill="#ff6600"/>
                                 </svg>
                             </div>
@@ -277,7 +283,74 @@
 
         <div class="sidebar-dummy"></div>
         <aside class="sidebar">
-            <div>1</div>
+            <div>
+                <div class="notifications-header">
+                    <div>notifications</div>
+                    <button>..</button>
+                </div>
+                <div class="notifications">
+                    <div class="notifications__item">
+                        <div class="notifications__icon">
+                            <svg width="30px" height="30px">
+                                <use xlink:href="assets/images/feather.svg#folder-plus"></use>
+                            </svg>
+                        </div>
+                        <div class="notifications__details">
+                            <div>
+                                <div>playlist added</div>
+                                <div>106 songs</div>
+                            </div>
+                            <div>2 mins</div>
+                        </div>
+                    </div>
+                    <div class="notifications__item">
+                        <div class="notifications__icon">
+                            <svg width="30px" height="30px">
+                                <use xlink:href="assets/images/feather.svg#folder-plus"></use>
+                            </svg>
+                        </div>
+                        <div class="notifications__details">
+                            <div>
+                                <div>playlist shared</div>
+                                <div>to 32 users</div>
+                            </div>
+                            <div>8 hours</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="artist-header">
+                    <div>top artists</div>
+                    <button>..</button>
+                </div>
+                <div class="artists flex space-between">
+                    <div class="artists__item">
+                        <img width="90" height="90" src="assets/images/solmaz.jpg" alt="solmaz badri">
+                        <div>Solmaz</div>
+                    </div>
+                    <div class="artists__item">
+                        <img width="90" height="90" src="assets/images/yasmine.jpg" alt="yasmine">
+                        <div>Yasmine</div>
+                    </div>
+                    <div class="artists__item">
+                        <img width="90" height="90" src="assets/images/mahya.jpg" alt="mahya hamedi">
+                        <div>mahya</div>
+                    </div>
+                    <div class="artists__item">
+                        <img width="90" height="90" src="assets/images/kamelia.jpg" alt="kamelia jobran">
+                        <div>Kamelia</div>
+                    </div>
+                    <div class="artists__item">
+                        <img width="90" height="90" src="assets/images/aynur.jpg" alt="aynur dogan">
+                        <div>aynur</div>
+                    </div>
+                    <div class="artists__item">
+                        <img width="90" height="90" src="assets/images/chava.jpg" alt="chava  alberstein">
+                        <div>Chava</div>
+                    </div>
+                </div>
+            </div>
             <div class="player">
                 <div class="player__title">Now Playing</div>
                 <div class="player__image">

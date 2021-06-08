@@ -98,6 +98,7 @@ musics.forEach((x, i) => {
                 controlPlayIcons(isPlayingIcons, 'pause');
             }
             play(i, audio, playBtn);
+            addToRecentlyPlayedList(i);
         } else {
             if (audio.paused) {
                 play(i, audio, playBtn);
@@ -141,6 +142,69 @@ function controlPlayIcons(iconsContainer, state) {
         pauseIcon.style.display = 'none';
         playIcon.style.display = 'block';
     }
+}
+
+function addToRecentlyPlayedList(i) {
+    setTimeout(function () {
+        document.querySelector('.music-list__item:last-child').remove();
+    }, 500);
+
+    let newItem = document.createElement("LI");
+    newItem.className = 'music-list__item';
+    let newMusic = document.createElement("DIV");
+    newMusic.className = 'music-list__left';
+    let newCover = document.createElement('IMG');
+    newCover.className = 'music-list__cover';
+    newCover.src = musicsList[i].cover;
+    let newInfo = document.createElement("DIV");
+    newInfo.className = 'music-list__info';
+    let newName = document.createElement("DIV");
+    newName.className = 'ellipsis';
+    let newNameText = document.createTextNode(musicsList[i].name);
+    newName.appendChild(newNameText);
+    let newArtist = document.createElement("DIV");
+    newArtist.className = 'ellipsis';
+    let newArtistText = document.createTextNode(musicsList[i].artist);
+    newArtist.appendChild(newArtistText);
+
+    let newControlers = document.createElement("DIV");
+    newControlers.className = 'music-list__right';
+    let newDuration = document.createElement("DIV");
+    let newDurationText = document.createTextNode(format(isPlaying.duration));
+    newDuration.appendChild(newDurationText);
+
+    let newPlayIcons = document.createElement("DIV");
+    newPlayIcons.className = 'music-list__play-btn';
+    let newPlaySvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    newPlayUse = document.createElementNS("http://www.w3.org/2000/svg", "use");
+    newPlayUse.setAttribute("href", "./assets/images/feather.svg#play");
+    newPlaySvg.appendChild(newPlayUse);
+
+    let newAddIcon = document.createElement("DIV");
+    newAddIcon.classList = 'music-list__add-to';
+    let newAddSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    newAddUse = document.createElementNS("http://www.w3.org/2000/svg", "use");
+    newAddUse.setAttribute("href", "./assets/images/feather.svg#plus-square");
+    newAddSvg.appendChild(newAddUse);
+
+
+
+    newControlers.appendChild(newDuration);
+    newPlayIcons.appendChild(newPlaySvg);
+    newAddIcon.appendChild(newAddSvg);
+    newControlers.appendChild(newPlayIcons);
+    newControlers.appendChild(newAddIcon);
+
+    newInfo.appendChild(newName);
+    newInfo.appendChild(newArtist);
+    newMusic.appendChild(newCover);
+    newMusic.appendChild(newInfo);
+    newItem.appendChild(newMusic);
+    newItem.appendChild(newControlers);
+
+    const list = document.querySelector('.music-list');
+    list.insertBefore(newItem, list.childNodes[0]);
+
 }
 
 function format(time) {
