@@ -18,6 +18,8 @@ body {
     background-color: #e6f2ff;
     padding: 2rem;
     font-family: 'Quicksand', sans-serif;
+    line-height: 1.7em;
+    text-transform: capitalize;
 }
 
 .app {
@@ -28,6 +30,16 @@ body {
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+}
+
+/*** typography ***/
+
+.title {
+    font-size: 1.125rem;
+}
+
+.subtitle {
+    font-size: .875rem;
 }
 
 .rounded-md {

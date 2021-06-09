@@ -164,6 +164,7 @@ function addToRecentlyPlayedList(i) {
     newName.appendChild(newNameText);
     let newArtist = document.createElement("DIV");
     newArtist.className = 'ellipsis';
+    newArtist.className += ' subtitle';
     let newArtistText = document.createTextNode(musicsList[i].artist);
     newArtist.appendChild(newArtistText);
 
