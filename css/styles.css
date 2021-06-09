@@ -20,6 +20,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     line-height: 1.7em;
     text-transform: capitalize;
+    color: var(--font-color);
 }
 
 .app {
@@ -40,6 +41,26 @@ body {
 
 .subtitle {
     font-size: .875rem;
+}
+
+.caps-first {
+    text-transform: lowercase;
+}
+
+.caps-first:first-letter {
+    text-transform: uppercase;
+}
+
+.caps-all {
+    text-transform: uppercase;
+}
+
+.text-color {
+    color: var(--font-color);
+}
+
+.text-light {
+    color: rgba(var(--font-colors), .6);
 }
 
 .rounded-md {
@@ -180,11 +201,8 @@ body {
     content: counters(counter, ".", decimal-leading-zero);
     font-size: 1rem;
     margin-right: 1rem;
+    color: rgba(var(--font-colors), .6);
 }
-
-/* .music-list__item:first-child {
-    counter-reset: counter;
-} */
 
 .music-list__cover {
     width: 3.125vw;
@@ -202,7 +220,6 @@ body {
 }
 
 .music-list__info {
-    overflow: hidden;
     margin-left: .75rem;
 }
 
@@ -255,7 +272,6 @@ body {
 .menu-item {
     display: flex;
     align-items: center;
-    color: gray;
     padding: .25rem 0;
     margin-bottom: .5rem;
 }

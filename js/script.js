@@ -158,19 +158,20 @@ function addToRecentlyPlayedList(i) {
     newCover.src = musicsList[i].cover;
     let newInfo = document.createElement("DIV");
     newInfo.className = 'music-list__info';
+    newInfo.className += ' ellipsis';
     let newName = document.createElement("DIV");
-    newName.className = 'ellipsis';
     let newNameText = document.createTextNode(musicsList[i].name);
     newName.appendChild(newNameText);
     let newArtist = document.createElement("DIV");
-    newArtist.className = 'ellipsis';
-    newArtist.className += ' subtitle';
+    newArtist.className = 'subtitle';
+    newArtist.className += ' text-light';
     let newArtistText = document.createTextNode(musicsList[i].artist);
     newArtist.appendChild(newArtistText);
 
     let newControlers = document.createElement("DIV");
     newControlers.className = 'music-list__right';
     let newDuration = document.createElement("DIV");
+    newDuration.className = 'text-light';
     let newDurationText = document.createTextNode(format(isPlaying.duration));
     newDuration.appendChild(newDurationText);
 
