@@ -77,10 +77,7 @@ var isPlaying = null;
 var isPlayingIcons = null;
 
 /*** initial player ***/
-// isPlaying = musics[0].querySelector('audio');
-// isPlayingIcons = musics[0].querySelector('.play-btn');
-// controlPlayIcons(isPlayingIcons, 'pause');
-// play(0, isPlaying, isPlayingIcons);
+playerEl.style.setProperty('--player-bg', musicsList[1].bg_color);
 
 musics.forEach((x, i) => {
     x.querySelector('img.cover').src = musicsList[i].cover;
@@ -115,7 +112,7 @@ function play(index, music, icons) {
     playerCoverEl.src = musicsList[index].cover;
     playerTitleEl.innerHTML = musicsList[index].name;
     playerAtristEl.innerHTML = musicsList[index].artist;
-    playerEl.style.setProperty('--player-bg', musicsList[index].bg_color || "darkcyan");
+    playerEl.style.setProperty('--player-bg', musicsList[index].bg_color);
     music.play();
     isPlaying = music;
     isPlayingIcons = icons;
