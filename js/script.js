@@ -73,8 +73,8 @@ let playerAtristEl = document.querySelector('.player__artist');
 let playerRangeEl = document.querySelector('.player__range');
 let currentTimeEl = document.querySelector('.player__currentTime');
 let durationEl = document.querySelector('.player__duration');
-var isPlaying = null;
-var isPlayingIcons = null;
+let isPlaying = null;
+let isPlayingIcons = null;
 
 /*** initial player ***/
 playerEl.style.setProperty('--player-bg', musicsList[1].bg_color);
@@ -198,8 +198,6 @@ function addToRecentlyPlayedList(i) {
     newAddUse.setAttribute("href", "./assets/images/feather.svg#plus-square");
     newAddSvg.appendChild(newAddUse);
 
-
-
     newControlers.appendChild(newDuration);
     newPlayIcons.appendChild(newPlaySvg);
     newPlayIcons.appendChild(newPauseSvg);
@@ -220,13 +218,12 @@ function addToRecentlyPlayedList(i) {
 }
 
 function format(time) {
-    // Hours, minutes and seconds
-    var hrs = ~~(time / 3600);
-    var mins = ~~((time % 3600) / 60);
-    var secs = ~~time % 60;
 
-    // Output like "1:01" or "4:03:59" or "123:03:59"
-    var ret = "";
+    let hrs = ~~(time / 3600);
+    let mins = ~~((time % 3600) / 60);
+    let secs = ~~time % 60;
+
+    let ret = "";
     if (hrs > 0) {
         ret += "" + hrs + ":" + (mins < 10 ? "0" : "");
     }

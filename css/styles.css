@@ -1,18 +1,8 @@
 html {
-    --color-primary: #0060df;
-    --color-secondary: #ffffff;
-    --color-accent: #ff6600;
+    --accent: #ff6600;
     --font-color: #204060;
     --font-colors: 20, 40, 60;
 }
-
-/* .text-color {
-    color: var(--font-color);
-}
-
-.text-color-light {
-    color: rgba(var(--font-colors), 0.66);
-} */
 
 body {
     background-color: #e6f2ff;
@@ -27,7 +17,7 @@ body {
     position: relative;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-secondary);
+    background-color: #fff;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -43,6 +33,10 @@ body {
 .subtitle {
     font-size: .875rem;
 }
+
+/*** end typography ***/
+
+/*** custom classes ***/
 
 .caps-first {
     text-transform: lowercase;
@@ -69,6 +63,8 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/*** end custom classes ***/
 
 .main {
     min-width: 0;
@@ -149,8 +145,8 @@ body {
     display: none;
 }
 
-.play-btn svg, .music-list__play-btn svg {
-    color: #ff6600;
+.play-btn, .music-list__play-btn {
+    color: var(--accent);
 }
 
 .music-list {
@@ -220,8 +216,8 @@ body {
     cursor: pointer;
 }
 
-.music-list__add-to svg {
-    color: gray;
+.music-list__add-to {
+    color: rgba(var(--font-colors), .6);
 }
 
 /*** menu ***/
@@ -233,8 +229,6 @@ body {
     left: 2rem;
     padding: 2rem 1rem 2rem 2rem;
     overflow-y: auto;
-    /* border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem; */
 }
 
 .menu-dummy {
@@ -266,9 +260,11 @@ body {
 }
 
 .menu-item--selected {
-    color: orangered;
+    color: var(--accent);
     border-right: 2px solid currentColor;
 }
+
+/*** end menu ***/
 
 /*** sidebar ***/
 
@@ -288,6 +284,8 @@ body {
     width: 360px;
     flex-shrink: 0;
 }
+
+/*** end sidebar ***/
 
 /*** artists ***/
 
@@ -316,6 +314,8 @@ body {
 .artists__name {
     text-align: center;
 }
+
+/*** end artists ***/
 
 /*** notifications ***/
 
@@ -350,6 +350,8 @@ body {
     flex-grow: 1;
     padding: .5rem 0 .5rem 1rem;
 }
+
+/*** end notifications ***/
 
 /*** player ***/
 
@@ -434,12 +436,12 @@ body {
     border: 2px solid #fff;
     border-radius: 50%;
     background-color: #fff;
-    /* mix-blend-mode: normal; */
 }
 
-/* .player__currentTime, .player__duration {
+.player__currentTime, .player__duration {
+    /*** not working ***/
     font-variant-numeric: tabular-nums;
-} */
+}
 
 .player__controlers {
     display: flex;
@@ -452,6 +454,7 @@ body {
     align-items: center;
     width: 2.5rem;
     height: 2.5rem;
+    cursor: pointer;
 }
 
 .player__controlers-icon:nth-child(3) {
@@ -467,3 +470,5 @@ body {
     background: currentColor;
     opacity: .3;
 }
+
+/*** end player ***/
