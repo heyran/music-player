@@ -239,22 +239,4 @@ playerRangeEl.onmouseup = function (e) {
     let posX = e.clientX - viewportOffset.left;
     playerRangeEl.style.setProperty('--range', posX + 'px');
     isPlaying.currentTime = (posX / viewportOffset.width) * isPlaying.duration;
-    // playerRangeEl.onmousemove = function (e) {
-    //     //let viewportOffset = playerRangeEl.getBoundingClientRect();
-    //     let posX2 = e.clientX - viewportOffset.left;
-    //     playerRangeEl.style.setProperty('--range', posX2 + 'px');
-    //     //document.onmouseup = closeDragElement;
-    //     //document.onmousedown = closeDragElement;
-    // };
-    document.onmousedown = closeDragElement;
-
 }
-
-
-
-function closeDragElement() {
-    // stop moving when mouse button is released:
-    document.onmouseup = null;
-    //document.onmousemove = null;
-}
-
