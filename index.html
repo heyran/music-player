@@ -10,19 +10,23 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="app rounded-md">
+    <div class="app">
         <div class="menu-dummy"></div>
         <aside class="menu">
             <a href="" class="menu-section menu-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="24" height="24" preserveAspectRatio="xMinYMin" class="jam jam-play-circle-f"><path d="M10 20C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10zm4.126-8.254c.213-.153.397-.348.54-.575.606-.965.365-2.27-.54-2.917L10.07 5.356A1.887 1.887 0 0 0 8.972 5C7.883 5 7 5.941 7 7.102v5.796c0 .417.116.824.334 1.17.607.965 1.832 1.222 2.737.576l4.055-2.898zm-5.2-4.616l4.055 2.898-4.056 2.897V7.13z"></path></svg>
+                <svg width="1.5em" height="1.5em">
+                    <use href="assets/images/feather.svg#play-circle"></use>
+                </svg>
                 Rungon
             </a>
 
             <div class="menu-section">
-                <div class="caps-all text-light">Menu</div>
+                <div class="menu-title caps-all text-light">Menu</div>
                 <ul>
                     <li class="menu-item menu-item--selected">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="24" height="24" preserveAspectRatio="xMinYMin" class="jam jam-play-circle-f"><path d="M10 20C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10zm4.126-8.254c.213-.153.397-.348.54-.575.606-.965.365-2.27-.54-2.917L10.07 5.356A1.887 1.887 0 0 0 8.972 5C7.883 5 7 5.941 7 7.102v5.796c0 .417.116.824.334 1.17.607.965 1.832 1.222 2.737.576l4.055-2.898zm-5.2-4.616l4.055 2.898-4.056 2.897V7.13z"></path></svg>
+                        <svg width="1.5em" height="1.5em">
+                            <use href="assets/images/feather.svg#home"></use>
+                        </svg>
                         Home
                     </li>
                     <li class="menu-item">Search</li>
@@ -33,7 +37,7 @@
             </div>
 
             <div class="menu-section">
-                <div class="caps-all text-light">Library</div>
+                <div class="menu-title caps-all text-light">Library</div>
                 <ul>
                     <li class="menu-item">Recent</li>
                     <li class="menu-item">Favourites</li>
@@ -42,12 +46,10 @@
             </div>
 
             <div class="menu-section">
-                <div class="caps-all text-light">Playlist</div>
+                <div class="menu-title caps-all text-light">Playlist</div>
                 <ul>
                     <li class="menu-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="24" height="24" preserveAspectRatio="xMinYMin" class="jam jam-plus-rectangle-f">
-                            <path d="M11 11h4a1 1 0 0 0 0-2h-4V5a1 1 0 0 0-2 0v4H5a1 1 0 1 0 0 2h4v4a1 1 0 0 0 2 0v-4zM4 0h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z"></path>
-                        </svg>
+                        
                         Create New
                     </li>
                     <li class="menu-item">Pop Punk</li>
@@ -56,7 +58,7 @@
             </div>
 
             <div class="menu-section">
-                <div class="caps-all text-light">General</div>
+                <div class="menu-title caps-all text-light">General</div>
                 <ul>
                     <li class="menu-item">Settings</li>
                     <li class="menu-item">Log Out</li>
@@ -87,70 +89,64 @@
                         <div class="music-row__img">
                             <img src="" alt="" class="cover">
                             <span class="play-btn">
-                                <svg class="play" width="30%">
+                                <svg class="play" width="50%" height="50%">
                                     <use xlink:href="./assets/images/feather.svg#play"></use>
                                 </svg>
-                                <svg class="pause">
+                                <svg class="pause" width="50%" height="50%">
                                     <use xlink:href="./assets/images/feather.svg#pause"></use>
                                 </svg>
-                                <!-- <svg class="play" xmlns="http://www.w3.org/2000/svg" width="22.452" height="25.423" viewBox="0 0 22.452 25.423">
-                                    <path id="Path_17554" data-name="Path 17554" d="M14.531,9.393l16.194,9.578a3.128,3.128,0,0,1,0,5.385L14.531,33.934A3.129,3.129,0,0,1,9.809,31.24V12.088a3.129,3.129,0,0,1,4.722-2.695Z" transform="translate(-9.809 -8.952)" fill="#ff6600"/>
-                                </svg>
-                                <svg class="pause" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="entypo-controller-paus" width="20" height="20">
-                                    <g><path d="M15 3h-2c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6zM7 3H5c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6z" fill="#ff6600"></path></g>
-                                </svg> -->
                             </span>
                         </div>
-                        <div class="music-row__title"></div>
-                        <div class="music-row__artist subtitle"></div>
+                        <div class="music-row__title ellipsis"></div>
+                        <div class="music-row__artist subtitle text-light ellipsis"></div>
                     </div>
                     <div class="music-row__item music">
                         <audio src=""></audio>
                         <div class="music-row__img">
                             <img src="" alt="" class="cover">
                             <span class="play-btn">
-                                <svg class="play" xmlns="http://www.w3.org/2000/svg" width="22.452" height="25.423" viewBox="0 0 22.452 25.423">
-                                    <path id="Path_17554" data-name="Path 17554" d="M14.531,9.393l16.194,9.578a3.128,3.128,0,0,1,0,5.385L14.531,33.934A3.129,3.129,0,0,1,9.809,31.24V12.088a3.129,3.129,0,0,1,4.722-2.695Z" transform="translate(-9.809 -8.952)" fill="#ff6600"/>
+                                <svg class="play" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#play"></use>
                                 </svg>
-                                <svg class="pause" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="entypo-controller-paus" width="20" height="20">
-                                    <g><path d="M15 3h-2c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6zM7 3H5c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6z" fill="#ff6600"></path></g>
+                                <svg class="pause" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#pause"></use>
                                 </svg>
                             </span>
                         </div>
-                        <div class="music-row__title"></div>
-                        <div class="music-row__artist subtitle text-light"></div>
+                        <div class="music-row__title ellipsis"></div>
+                        <div class="music-row__artist subtitle text-light ellipsis"></div>
                     </div>
                     <div class="music-row__item music">
                         <audio src=""></audio>
                         <div class="music-row__img">
                             <img src="" alt="" class="cover">
                             <span class="play-btn">
-                                <svg class="play" xmlns="http://www.w3.org/2000/svg" width="22.452" height="25.423" viewBox="0 0 22.452 25.423">
-                                    <path id="Path_17554" data-name="Path 17554" d="M14.531,9.393l16.194,9.578a3.128,3.128,0,0,1,0,5.385L14.531,33.934A3.129,3.129,0,0,1,9.809,31.24V12.088a3.129,3.129,0,0,1,4.722-2.695Z" transform="translate(-9.809 -8.952)" fill="#ff6600"/>
+                                <svg class="play" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#play"></use>
                                 </svg>
-                                <svg class="pause" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="entypo-controller-paus" width="20" height="20">
-                                    <g><path d="M15 3h-2c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6zM7 3H5c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6z" fill="#ff6600"></path></g>
+                                <svg class="pause" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#pause"></use>
                                 </svg>
                             </span>
                         </div>
-                        <div class="music-row__title"></div>
-                        <div class="music-row__artist subtitle text-light"></div>
+                        <div class="music-row__title ellipsis"></div>
+                        <div class="music-row__artist subtitle text-light ellipsis"></div>
                     </div>
                     <div class="music-row__item music">
                         <audio src=""></audio>
                         <div class="music-row__img">
                             <img src="" alt="" class="cover">
                             <span class="play-btn">
-                                <svg class="play" xmlns="http://www.w3.org/2000/svg" width="22.452" height="25.423" viewBox="0 0 22.452 25.423">
-                                    <path id="Path_17554" data-name="Path 17554" d="M14.531,9.393l16.194,9.578a3.128,3.128,0,0,1,0,5.385L14.531,33.934A3.129,3.129,0,0,1,9.809,31.24V12.088a3.129,3.129,0,0,1,4.722-2.695Z" transform="translate(-9.809 -8.952)" fill="#ff6600"/>
+                                <svg class="play" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#play"></use>
                                 </svg>
-                                <svg class="pause" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="entypo-controller-paus" width="20" height="20">
-                                    <g><path d="M15 3h-2c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6zM7 3H5c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6z" fill="#ff6600"></path></g>
+                                <svg class="pause" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#pause"></use>
                                 </svg>
                             </span>
                         </div>
-                        <div class="music-row__title"></div>
-                        <div class="music-row__artist subtitle text-light"></div>
+                        <div class="music-row__title ellipsis"></div>
+                        <div class="music-row__artist subtitle text-light ellipsis"></div>
                     </div>
                 </div>
             </div>
@@ -166,64 +162,64 @@
                         <div class="music-row__img">
                             <img src="" alt="" class="cover">
                             <span class="play-btn">
-                                <svg class="play" xmlns="http://www.w3.org/2000/svg" width="22.452" height="25.423" viewBox="0 0 22.452 25.423">
-                                    <path id="Path_17554" data-name="Path 17554" d="M14.531,9.393l16.194,9.578a3.128,3.128,0,0,1,0,5.385L14.531,33.934A3.129,3.129,0,0,1,9.809,31.24V12.088a3.129,3.129,0,0,1,4.722-2.695Z" transform="translate(-9.809 -8.952)" fill="#ff6600"/>
+                                <svg class="play" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#play"></use>
                                 </svg>
-                                <svg class="pause" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="entypo-controller-paus" width="20" height="20">
-                                    <g><path d="M15 3h-2c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6zM7 3H5c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6z" fill="#ff6600"></path></g>
+                                <svg class="pause" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#pause"></use>
                                 </svg>
                             </span>
                         </div>
-                        <div class="music-row__title"></div>
-                        <div class="music-row__artist subtitle text-light"></div>
+                        <div class="music-row__title ellipsis"></div>
+                        <div class="music-row__artist subtitle text-light ellipsis"></div>
                     </div>
                     <div class="music-row__item music">
                         <audio src=""></audio>
                         <div class="music-row__img">
                             <img src="" alt="" class="cover">
                             <span class="play-btn">
-                                <svg class="play" xmlns="http://www.w3.org/2000/svg" width="22.452" height="25.423" viewBox="0 0 22.452 25.423">
-                                    <path id="Path_17554" data-name="Path 17554" d="M14.531,9.393l16.194,9.578a3.128,3.128,0,0,1,0,5.385L14.531,33.934A3.129,3.129,0,0,1,9.809,31.24V12.088a3.129,3.129,0,0,1,4.722-2.695Z" transform="translate(-9.809 -8.952)" fill="#ff6600"/>
+                                <svg class="play" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#play"></use>
                                 </svg>
-                                <svg class="pause" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="entypo-controller-paus" width="20" height="20">
-                                    <g><path d="M15 3h-2c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6zM7 3H5c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6z" fill="#ff6600"></path></g>
+                                <svg class="pause" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#pause"></use>
                                 </svg>
                             </span>
                         </div>
-                        <div class="music-row__title"></div>
-                        <div class="music-row__artist subtitle text-light"></div>
+                        <div class="music-row__title ellipsis"></div>
+                        <div class="music-row__artist subtitle text-light ellipsis"></div>
                     </div>
                     <div class="music-row__item music">
                         <audio src=""></audio>
                         <div class="music-row__img">
                             <img src="" alt="" class="cover">
                             <span class="play-btn">
-                                <svg class="play" xmlns="http://www.w3.org/2000/svg" width="22.452" height="25.423" viewBox="0 0 22.452 25.423">
-                                    <path id="Path_17554" data-name="Path 17554" d="M14.531,9.393l16.194,9.578a3.128,3.128,0,0,1,0,5.385L14.531,33.934A3.129,3.129,0,0,1,9.809,31.24V12.088a3.129,3.129,0,0,1,4.722-2.695Z" transform="translate(-9.809 -8.952)" fill="#ff6600"/>
+                                <svg class="play" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#play"></use>
                                 </svg>
-                                <svg class="pause" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="entypo-controller-paus" width="20" height="20">
-                                    <g><path d="M15 3h-2c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6zM7 3H5c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6z" fill="#ff6600"></path></g>
+                                <svg class="pause" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#pause"></use>
                                 </svg>
                             </span>
                         </div>
-                        <div class="music-row__title"></div>
-                        <div class="music-row__artist subtitle text-light"></div>
+                        <div class="music-row__title ellipsis"></div>
+                        <div class="music-row__artist subtitle text-light ellipsis"></div>
                     </div>
                     <div class="music-row__item music">
                         <audio src=""></audio>
                         <div class="music-row__img">
                             <img src="" alt="" class="cover">
                             <span class="play-btn">
-                                <svg class="play" xmlns="http://www.w3.org/2000/svg" width="22.452" height="25.423" viewBox="0 0 22.452 25.423">
-                                    <path id="Path_17554" data-name="Path 17554" d="M14.531,9.393l16.194,9.578a3.128,3.128,0,0,1,0,5.385L14.531,33.934A3.129,3.129,0,0,1,9.809,31.24V12.088a3.129,3.129,0,0,1,4.722-2.695Z" transform="translate(-9.809 -8.952)" fill="#ff6600"/>
+                                <svg class="play" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#play"></use>
                                 </svg>
-                                <svg class="pause" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="entypo-controller-paus" width="20" height="20">
-                                    <g><path d="M15 3h-2c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6zM7 3H5c-.553 0-1 .048-1 .6v12.8c0 .552.447.6 1 .6h2c.553 0 1-.048 1-.6V3.6c0-.552-.447-.6-1-.6z" fill="#ff6600"></path></g>
+                                <svg class="pause" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#pause"></use>
                                 </svg>
                             </span>
                         </div>
-                        <div class="music-row__title"></div>
-                        <div class="music-row__artist subtitle text-light"></div>
+                        <div class="music-row__title ellipsis"></div>
+                        <div class="music-row__artist subtitle text-light ellipsis"></div>
                     </div>
                 </div>
             </div>
@@ -236,48 +232,77 @@
                 <ol class="music-list">
                     <li class="music-list__item">
                         <div class="music-list__left">
-                            <img src="" alt="" class="music-list__cover">
+                            <img src="assets/images/Kamakan.jpg" alt="kamakan" class="music-list__cover">
                             <div class="music-list__info ellipsis">
-                                <div>I Miss You</div>
-                                <div class="subtitle text-light">test</div>
+                                <div>dastzanan</div>
+                                <div class="subtitle text-light">mehdi saki</div>
                             </div>
                         </div>
                         <div class="music-list__right">
-                            <div class="text-light">3:45</div>
+                            <div class="text-light">03:49</div>
                             <div class="music-list__play-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 22.452 25.423">
-                                    <path id="Path_17554" data-name="Path 17554" d="M14.531,9.393l16.194,9.578a3.128,3.128,0,0,1,0,5.385L14.531,33.934A3.129,3.129,0,0,1,9.809,31.24V12.088a3.129,3.129,0,0,1,4.722-2.695Z" transform="translate(-9.809 -8.952)" fill="#ff6600"/>
+                                <svg class="play" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#play"></use>
+                                </svg>
+                                <svg class="pause" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#pause"></use>
                                 </svg>
                             </div>
                             <div class="music-list__add-to">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="24" height="24" preserveAspectRatio="xMinYMin" class="jam jam-plus-rectangle-f">
-                                    <path d="M11 11h4a1 1 0 0 0 0-2h-4V5a1 1 0 0 0-2 0v4H5a1 1 0 1 0 0 2h4v4a1 1 0 0 0 2 0v-4zM4 0h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z" fill="gray"></path>
+                                <svg class="play" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#plus-square"></use>
                                 </svg>
                             </div>
                         </div>
                     </li>
                     <li class="music-list__item">
                         <div class="music-list__left">
-                            <img src="" alt="" class="music-list__cover">
+                            <img src="assets/images/tirishko.jpg" alt="tirishko" class="music-list__cover">
                             <div class="music-list__info ellipsis">
-                                <div>I Miss You</div>
-                                <div class="subtitle text-light">test</div>
+                                <div>vaagard</div>
+                                <div class="subtitle text-light">heydoo hedayati</div>
                             </div>
                         </div>
                         <div class="music-list__right">
-                            <div class="text-light">3:45</div>
+                            <div class="text-light">04:12</div>
+                            <div class="music-list__play-btn">
+                                <svg class="play" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#play"></use>
+                                </svg>
+                                <svg class="pause" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#pause"></use>
+                                </svg>
+                            </div>
+                            <div class="music-list__add-to">
+                                <svg class="play" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#plus-square"></use>
+                                </svg>
+                            </div>
                         </div>
                     </li>
                     <li class="music-list__item">
                         <div class="music-list__left">
-                            <img src="" alt="" class="music-list__cover">
+                            <img src="assets/images/sky.jpg" alt="ghatre" class="music-list__cover">
                             <div class="music-list__info ellipsis">
-                                <div>I Miss You</div>
-                                <div class="subtitle text-light">test</div>
+                                <div>ghatre</div>
+                                <div class="subtitle text-light">mohammadreza eshaaghi</div>
                             </div>
                         </div>
                         <div class="music-list__right">
-                            <div class="text-light">3:45</div>
+                            <div class="text-light">02:35</div>
+                            <div class="music-list__play-btn">
+                                <svg class="play" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#play"></use>
+                                </svg>
+                                <svg class="pause" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#pause"></use>
+                                </svg>
+                            </div>
+                            <div class="music-list__add-to">
+                                <svg class="play" width="50%" height="50%">
+                                    <use xlink:href="./assets/images/feather.svg#plus-square"></use>
+                                </svg>
+                            </div>
                         </div>
                     </li>
                 </ol>
@@ -328,37 +353,38 @@
                     <div>top artists</div>
                     <a href="">&bull; &bull;</a>
                 </div>
-                <div class="artists flex space-between">
+                <div class="artists">
                     <div class="artists__item">
                         <img width="90" height="90" src="assets/images/solmaz.jpg" alt="solmaz badri">
-                        <div class="subtitle">Solmaz</div>
+                        <div class="artists__name subtitle ellipsis">Solmaz</div>
                     </div>
                     <div class="artists__item">
-                        <img width="90" height="90" src="assets/images/yasmine.jpg" alt="yasmine">
-                        <div class="subtitle">Yasmine</div>
+                        <img width="90" height="90" src="assets/images/yasmine.jpg" alt="yasmine hamdan">
+                        <div class="artists__name subtitle ellipsis">Yasmine</div>
                     </div>
                     <div class="artists__item">
                         <img width="90" height="90" src="assets/images/mahya.jpg" alt="mahya hamedi">
-                        <div class="subtitle">mahya</div>
+                        <div class="artists__name subtitle ellipsis">mahya</div>
                     </div>
                     <div class="artists__item">
                         <img width="90" height="90" src="assets/images/kamelia.jpg" alt="kamelia jobran">
-                        <div class="subtitle">Kamelia</div>
+                        <div class="artists__name subtitle ellipsis">Kamelia</div>
                     </div>
                     <div class="artists__item">
                         <img width="90" height="90" src="assets/images/aynur.jpg" alt="aynur dogan">
-                        <div class="subtitle">aynur</div>
+                        <div class="artists__name subtitle ellipsis">aynur</div>
                     </div>
                     <div class="artists__item">
-                        <img width="90" height="90" src="assets/images/chava.jpg" alt="chava  alberstein">
-                        <div class="subtitle">Chava</div>
+                        <img width="90" height="90" src="assets/images/chava.jpg" alt="chava alberstein">
+                        <div class="artists__name subtitle ellipsis">Chava</div>
                     </div>
                 </div>
             </div>
+
             <div class="player">
                 <div class="player__title title">Now Playing</div>
                 <div class="player__image">
-                    <img width="250" height="140" src="assets/images/hobb.jpg" alt="">
+                    <img width="250" height="140" src="assets/images/hobb.jpg" alt="hobb">
                 </div>                
                 <div class="player__name">title</div>
                 <div class="player__artist subtitle">subtitle</div>
@@ -367,7 +393,36 @@
                     <div class="player__range"></div>
                     <span class="player__duration">00:00</span>
                 </div>
-                <div class="player__controlers">test</div>
+                <div class="player__controlers">
+                    <span class="player__controlers-icon">
+                        <svg width="50%" height="50%">
+                            <use href="assets/images/feather.svg#repeat"></use>
+                        </svg>
+                    </span>
+                    <span class="player__controlers-icon">
+                        <svg width="50%" height="50%">
+                            <use href="assets/images/feather.svg#skip-back"></use>
+                        </svg>
+                    </span>
+                    <span class="player__controlers-icon">
+                        <svg width="50%" height="50%" class="play">
+                            <use href="assets/images/feather.svg#play"></use>
+                        </svg>
+                        <svg width="50%" height="50%" class="pause">
+                            <use href="assets/images/feather.svg#pause"></use>
+                        </svg>
+                    </span>
+                    <span class="player__controlers-icon">
+                        <svg width="50%" height="50%">
+                            <use href="assets/images/feather.svg#skip-forward"></use>
+                        </svg>
+                    </span>
+                    <span class="player__controlers-icon">
+                        <svg width="50%" height="50%">
+                            <use href="assets/images/feather.svg#shuffle"></use>
+                        </svg>
+                    </span>
+                </div>
             </div>
         </aside>
     </div>

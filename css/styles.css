@@ -31,6 +31,7 @@ body {
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 1rem;
 }
 
 /*** typography ***/
@@ -63,20 +64,10 @@ body {
     color: rgba(var(--font-colors), .6);
 }
 
-.rounded-md {
-    border-radius: 1rem;
-}
-
-.flex {
-    display: flex;
-}
-
-.items-center {
-    align-items: center;
-}
-
-.space-between {
-    justify-content: space-between;
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .main {
@@ -134,16 +125,8 @@ body {
     object-fit: cover;
 }
 
-.ellipsis {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.music-row__title, .music-row__artist {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.music-row__title {
+    margin-top: .5rem;
 }
 
 .play-btn {
@@ -167,8 +150,6 @@ body {
 }
 
 .play-btn svg, .music-list__play-btn svg {
-    width: 50%;
-    height: 50%;
     color: #ff6600;
 }
 
@@ -205,10 +186,8 @@ body {
 }
 
 .music-list__cover {
-    width: 3.125vw;
-    height: 3.125vw;
-    min-width: 50px;
-    min-height: 50px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
     border-radius: 1rem;
 }
@@ -242,8 +221,6 @@ body {
 }
 
 .music-list__add-to svg {
-    width: 50%;
-    height: 50%;
     color: gray;
 }
 
@@ -265,8 +242,8 @@ body {
     flex-shrink: 0;
 }
 
-.menu-section {
-    margin-bottom: 2rem;
+.menu-title {
+    margin-bottom: .5rem;
 }
 
 .menu-item {
@@ -274,6 +251,10 @@ body {
     align-items: center;
     padding: .25rem 0;
     margin-bottom: .5rem;
+}
+
+.menu-section {
+    margin-bottom: 2rem;
 }
 
 .menu-item svg {
@@ -318,7 +299,9 @@ body {
 }
 
 .artists {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     row-gap: 1rem;
 }
 
@@ -328,6 +311,10 @@ body {
 
 .artists img {
     border-radius: 1rem;
+}
+
+.artists__name {
+    text-align: center;
 }
 
 /*** notifications ***/
@@ -454,6 +441,29 @@ body {
     font-variant-numeric: tabular-nums;
 } */
 
-/* .player__controlers {
+.player__controlers {
     display: flex;
-} */
+    justify-content: space-between;
+}
+
+.player__controlers-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.player__controlers-icon:nth-child(3) {
+    position: relative;
+}
+
+.player__controlers-icon:nth-child(3):before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    background: currentColor;
+    opacity: .3;
+}

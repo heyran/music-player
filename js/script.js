@@ -178,13 +178,25 @@ function addToRecentlyPlayedList(i) {
     let newPlayIcons = document.createElement("DIV");
     newPlayIcons.className = 'music-list__play-btn';
     let newPlaySvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    newPlayUse = document.createElementNS("http://www.w3.org/2000/svg", "use");
+    newPlaySvg.setAttribute("width", "50%");
+    newPlaySvg.setAttribute("height", "50%");
+    newPlaySvg.className.baseVal = 'play';
+    let newPlayUse = document.createElementNS("http://www.w3.org/2000/svg", "use");
     newPlayUse.setAttribute("href", "./assets/images/feather.svg#play");
     newPlaySvg.appendChild(newPlayUse);
+    let newPauseSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    newPauseSvg.setAttribute("width", "50%");
+    newPauseSvg.setAttribute("height", "50%");
+    newPauseSvg.className.baseVal = 'pause';
+    let newPauseUse = document.createElementNS("http://www.w3.org/2000/svg", "use");
+    newPauseUse.setAttribute("href", "./assets/images/feather.svg#play");
+    newPlaySvg.appendChild(newPauseUse);
 
     let newAddIcon = document.createElement("DIV");
     newAddIcon.classList = 'music-list__add-to';
     let newAddSvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    newAddSvg.setAttribute('width', '50%');
+    newAddSvg.setAttribute('height', '50%');
     newAddUse = document.createElementNS("http://www.w3.org/2000/svg", "use");
     newAddUse.setAttribute("href", "./assets/images/feather.svg#plus-square");
     newAddSvg.appendChild(newAddUse);
@@ -193,6 +205,7 @@ function addToRecentlyPlayedList(i) {
 
     newControlers.appendChild(newDuration);
     newPlayIcons.appendChild(newPlaySvg);
+    newPlayIcons.appendChild(newPauseSvg);
     newAddIcon.appendChild(newAddSvg);
     newControlers.appendChild(newPlayIcons);
     newControlers.appendChild(newAddIcon);
