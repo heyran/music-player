@@ -63,17 +63,19 @@ body {
 /*** end custom classes ***/
 
 .main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
     min-width: 0;
     max-width: 1020px;
     flex-grow: 1;
     padding: 1rem;
 }
 
-.home_header, .music-row__header {
+.home_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
 }
 
 .home_nav {
@@ -85,6 +87,12 @@ body {
     padding: 1rem;
     border: 1px solid #e6f2ff;
     border-radius: .3rem;
+}
+
+.music-row__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 1rem;
 }
 
@@ -95,7 +103,7 @@ body {
 }
 
 .music-row__item {
-    width: calc(25% - 1.25rem);
+    width: calc(25% - .75rem);
     min-width: calc(100px + 1rem);
     padding: .5rem;
     border: 1px solid #e6f2ff;
@@ -155,7 +163,7 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    padding: 1rem 0;
+    padding: .5rem 0;
     overflow: hidden;
     counter-increment: counter;
     animation: increaseHeight 500ms;
@@ -166,7 +174,7 @@ body {
         height: 0;
     }
     to {
-        height: 52px;
+        height: 54px;
     }
 }
 
@@ -178,8 +186,8 @@ body {
 }
 
 .music-list__cover {
-    width: 50px;
-    height: 50px;
+    width: 54px;
+    height: 54px;
     object-fit: cover;
     border-radius: 1rem;
 }
