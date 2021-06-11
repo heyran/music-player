@@ -406,8 +406,6 @@ body {
 .player__range-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
     margin: 2rem 0;
 }
 
@@ -444,8 +442,17 @@ body {
 }
 
 .player__currentTime, .player__duration {
+    width: 54px;
     /*** not working ***/
     font-variant-numeric: tabular-nums;
+}
+
+.player__currentTime {
+    text-align: left;
+}
+
+.player__duration {
+    text-align: right;
 }
 
 .player__controlers {
