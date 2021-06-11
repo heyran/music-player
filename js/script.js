@@ -9,7 +9,7 @@ let musicsList = [
     },
     {
         id: 2,
-        url: 'assets/musics/Daste Zanan.mp3',
+        url: 'assets/musics/Dastzanan.mp3',
         cover: 'assets/images/Kamakan.jpg',
         bg_color: '#382725',
         name: 'Dastzanan',
